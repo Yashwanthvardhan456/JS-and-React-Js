@@ -1,0 +1,94 @@
+
+3)How data(Variables,functions,dynamic values) appears on Screen?
+import React from "react";
+
+const App = () => {
+  const display = () => {
+    return "Welcome to React2";
+  };
+  const result = display();
+  const displayDate = new Date();
+  return (
+    <div>
+      {result}
+      <p>- {displayDate.toString()}</p>
+    </div>
+  );
+};
+export default App;
+
+5) JSX Rules and best practices?
+->Must return one parent Elements
+->Use className instead of Class.
+->Use camelCase for Attributes.
+->All tags must be closed properly.
+->Only expressions allowed (not Statements like if/for).
+import React from "react";
+
+const App = () => {
+  const ClickFunc = () => {
+    console.log("Clicked");
+  };
+  return (
+    <div>
+      <button onClick={ClickFunc}>Click</button>
+    </div>
+  );
+};
+export default App;
+
+***Only expressions allowed (not Statements like if/for).
+import React from "react";
+import "./App.css";
+
+const App = () => {
+  const a = 1,
+    b = 32;
+  return (
+    <div>
+      <p>
+        Addition of {a} and {b} is {a + b}
+      </p>
+    </div>
+  );
+};
+export default App;
+
+6) Creating simple profile card
+import React from "react";
+import "./profile.css";
+const Profile = () => {
+  const name = "Yaswanth",
+    Age = 26,
+    Role = "Software Developer";
+  return (
+    <div className="header">
+      <p>Name = {name}</p>
+      <p>Age = {Age}</p>
+      <p>Role = {Role} </p>
+    </div>
+  );
+};
+
+export default Profile;
+.header {
+  align-items: center;
+  background-color: aquamarine;
+  border: 20px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 20px;
+}
+import React from "react";
+import "./App.css";
+import Profile from "./components/Profile";
+const App = () => {
+  return (
+    <div>
+      <Profile />
+    </div>
+  );
+};
+export default App;
+
+
