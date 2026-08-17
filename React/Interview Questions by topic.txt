@@ -1,0 +1,48 @@
+Props
+1. What are props in React?
+Props are inputs to components used to pass data from parent components to child components.
+
+2. Can props be modified?
+No. Props are immutable (read-only).
+
+3. What is the difference between props and state?
+Props
+Passed from parent
+Read-only
+Used for communication
+
+state
+Managed within component
+Can be updated
+Used for dynamic data
+
+4. What is children prop?
+A special prop used to pass content between component tags.
+
+<Component>
+  Content Here
+</Component>
+
+5. Can functions be passed as props?
+Yes. Functions can be passed as props to allow child components to communicate with parent components.
+
+<Child onClick={handleClick} />
+
+function App() {
+  return (
+    <User
+      name="Yashwanth"
+      role="Associate"
+    />
+  );
+}
+
+function User({ name, role }) {
+  return (
+    <>
+      <h2>{name}</h2>
+      <p>{role}</p>
+    </>
+  );
+}
+

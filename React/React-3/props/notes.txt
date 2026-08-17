@@ -1,0 +1,72 @@
+Yes. Functions can be passed as props to allow child components to communicate with parent components.Video 3: 🧩 Props in React
+
+📌 Topics to Cover — Props in React
+
+1. What are Props?
+2. Why do we use Props? (To make components dynamic & reusable)
+3. How to pass props from Parent to Child
+4. How to receive props in the Child component (props object)
+5. How to access props
+6. Destructuring props
+7. Multiple props (sending more than one value)
+8. Props behave like function arguments (JS comparison)
+9. Props are read-only (cannot modify inside child)
+10. Real example: Creating a reusable Card component
+
+Mini project: Product Card / Food Item Card using props
+
+Props in React.js - Notes
+Q. What are Props?
+Props (Properties) are used to pass data from a parent component to a child component in React.
+
+Props are read-only (immutable).
+They help make components reusable.
+Data flows in one direction: Parent ➝ Child.
+
+2. Why do we use Props? (To make components dynamic & reusable)
+3. How to pass props from Parent to Child
+4. How to receive props in the Child component (props object)
+5. How to access props
+
+Example
+APP.JSX
+import React from "react";
+import "./App.css";
+import Child from "./components/Child";
+
+function App() {
+  const name = "Binty";
+  const age = 26;
+  const con = "India";
+  return (
+    <>
+      <div>
+        <h1>Hello</h1>
+        <Child name={name} age={age} country={con} />
+      </div>
+    </>
+  );
+}
+
+export default App;
+
+Child.JSX
+import React from "react";
+
+const Child = (prop) => {
+  return (
+    <div>
+      <h1>Coming from child components</h1>
+      <p>{prop.name}</p>
+      <p>{prop.age}</p>
+      <p>{prop.country}</p>
+    </div>
+  );
+};
+
+export default Child;
+
+
+
+
+
