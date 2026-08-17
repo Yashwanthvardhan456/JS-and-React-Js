@@ -1,0 +1,19 @@
+1. Spread Operator (...)
+
+The Spread Operator expands elements of an array or object.
+Array Example
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5];
+
+console.log(arr2);
+
+2. Rest Operator (...)
+
+The Rest Operator collects multiple elements into a single array.
+
+const demo = (...numbers) => {
+  return numbers;
+};
+console.log(demo(1, 2, 3, 4));
+
+
