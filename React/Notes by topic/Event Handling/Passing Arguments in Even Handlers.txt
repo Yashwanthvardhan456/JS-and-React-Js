@@ -1,0 +1,20 @@
+//Passing Arguments in Event Handlers
+import { useState } from "react";
+
+import "./App.css";
+
+function App() {
+  function buttonclick(name) {
+    alert(`Hello ${name}`);
+  }
+
+  return (
+    <>
+      <div>
+        <button onClick={() => buttonclick("Binty")}>click</button>
+      </div>
+    </>
+  );
+}
+
+export default App;

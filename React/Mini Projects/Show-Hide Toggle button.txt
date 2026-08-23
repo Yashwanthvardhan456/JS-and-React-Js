@@ -1,0 +1,56 @@
+Show/Hide Toggle Button Version 1
+import React, { useState } from "react";
+const App = () => {
+  const [show, setShow] = useState(false);
+  const buttonClicked = () => {
+    if (show === true) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+  return (
+    <div>
+      <button onClick={buttonClicked}>{show ? "Hide" : "Show"}</button>
+      <div>{show && "This is the Secret Message"}</div>
+    </div>
+  );
+};
+export default App;
+
+Show/Hide Toggle Button Version 2
+import React, { useState } from "react";
+const App = () => {
+  const [show, setShow] = useState(false);
+  const buttonClicked = () => {
+  setShow(!show)
+  };
+  return (
+    <div>
+      <button onClick={buttonClicked}>{show ? "Hide" : "Show"}</button>
+      <div>{show && "This is the Secret Message"}</div>
+    </div>
+  );
+};
+export default App;
+
+
+Show/Hide Toggle Button Version 3
+import React, { useState } from "react";
+const App = () => {
+  const [show, setShow] = useState(false);
+  const buttonClicked = () => {
+    if (show === true) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+  return (
+    <div>
+      <button onClick={buttonClicked}>{show ? "Hide" : "Show"}</button>
+      <div>{show && "This is the Secret Message"}</div>
+    </div>
+  );
+};
+export default App;
