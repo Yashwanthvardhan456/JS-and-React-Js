@@ -18,12 +18,10 @@ const App = () => {
     setSubmitPassword(password);
 
     // Clear form fields
-
     setName("");
-
     setEmail("");
-
     setPassword("");
+    // setPasswordVisible(false);
   };
   return (
     <div>

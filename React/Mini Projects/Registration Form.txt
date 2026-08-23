@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const App = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [ispassword, setIsPassword] = useState("");
+  const [password, setPassword] = useState("");
 
   const [submitName, setSubmitName] = useState("");
   const [submitEmail, setSubmitEmail] = useState("");
@@ -11,43 +11,46 @@ const App = () => {
 
   const [passwordVisible, setPasswordVisible] = useState(false);
 
-  function submitFunc(e) {
+  const submitFunc = (e) => {
     e.preventDefault();
     setSubmitName(name);
     setSubmitEmail(email);
-    setSubmitPassword(ispassword);
+    setSubmitPassword(password);
 
     // Clear form fields
     setName("");
     setEmail("");
     setPassword("");
-  }
-
+    setPasswordVisible(false);
+  };
   return (
     <div>
       <form onSubmit={submitFunc}>
         <div>
-          Name:{" "}
+          Enter Name:{" "}
           <input
-            value={name}
             type="text"
+            value={name}
+            placeholder="Enter Name"
             onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div>
-          Email Id:{" "}
+          Enter Email:{" "}
           <input
             value={email}
             type="email"
+            placeholder="Enter Email"
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div>
-          Password:{" "}
+          Enter Password:{" "}
           <input
-            value={ispassword}
+            value={password}
             type={passwordVisible ? "text" : "password"}
-            onChange={(e) => setIsPassword(e.target.value)}
+            placeholder="Enter Password"
+            onChange={(e) => setPassword(e.target.value)}
           />
           <button
             type="button"
@@ -58,12 +61,9 @@ const App = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
-
-      <div>
-        <h1>Name : {submitName}</h1>
-        <h1>Email Id : {submitEmail}</h1>
-        <h1>Password : {submitPassword}</h1>
-      </div>
+      <h1>Name : {submitName}</h1>
+      <h1>Email : {submitEmail}</h1>
+      <h1>Password : {submitPassword}</h1>
     </div>
   );
 };
