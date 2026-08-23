@@ -1,0 +1,44 @@
+//onChange Even Example
+import { useState } from "react";
+
+import "./App.css";
+
+function App() {
+  const [text, setText] = useState();
+  return (
+    <>
+      <div>
+        <div>
+          <input
+            type="text"
+            placeholder="Enter Text"
+            onChange={(e) => setText(e.target.value)}
+          />
+        </div>
+        <div>
+          <h2>{text}</h2>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default App;
+
+//Example 2
+import React, { useState } from "react";
+
+function App() {
+  const [city, setCity] = useState("");
+  return (
+    <div>
+      <select onChange={(e) => setCity(e.target.value)}>
+        <option value="">Select City</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Bangalore">Bangalore</option>
+      </select>
+
+      <p>Selected City: {city}</p>
+    </div>
+  );
+}

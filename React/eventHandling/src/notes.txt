@@ -66,4 +66,30 @@ function App() {
 
 export default App;
 
+// onSubmit Example
+import React, { useState } from "react";
 
+const App = () => {
+  const [text, setText] = useState("");
+  const [submitText, setSubmitText] = useState("");
+
+  function submitFunc(e) {
+    setSubmitText(text);
+    e.preventDefault();
+    console.log(`Submitted: ${text}`);
+  }
+  function typing(e) {
+    setText(e.target.value);
+  }
+  return (
+    <div>
+      <form action="" onSubmit={submitFunc}>
+        <input type="text" onChange={typing} />
+        <button>Submit</button>
+      </form>
+      <h1>{submitText}</h1>
+    </div>
+  );
+};
+
+export default App;
