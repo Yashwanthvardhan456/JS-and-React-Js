@@ -1,70 +1,11 @@
 import React, { useState } from "react";
+import Child from "./child";
 
 const App = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const [submitName, setSubmitName] = useState("");
-  const [submitEmail, setSubmitEmail] = useState("");
-  const [submitPassword, setSubmitPassword] = useState("");
-
-  const [passwordVisible, setPasswordVisible] = useState(false);
-
-  const submitFunc = (e) => {
-    e.preventDefault();
-    setSubmitName(name);
-    setSubmitEmail(email);
-    setSubmitPassword(password);
-
-    // Clear form fields
-    setName("");
-    setEmail("");
-    setPassword("");
-    // setPasswordVisible(false);
-  };
   return (
-    <div>
-      <form onSubmit={submitFunc}>
-        <div>
-          Enter Name:{" "}
-          <input
-            type="text"
-            value={name}
-            placeholder="Enter Name"
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
-        <div>
-          Enter Email:{" "}
-          <input
-            value={email}
-            type="email"
-            placeholder="Enter Email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div>
-          Enter Password:{" "}
-          <input
-            value={password}
-            type={passwordVisible ? "text" : "password"}
-            placeholder="Enter Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button
-            type="button"
-            onClick={() => setPasswordVisible((prev) => !prev)}
-          >
-            {passwordVisible ? "Hide" : "Show"}
-          </button>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-      <h1>Name : {submitName}</h1>
-      <h1>Email : {submitEmail}</h1>
-      <h1>Password : {submitPassword}</h1>
-    </div>
+    <>
+      <Child />
+    </>
   );
 };
 
