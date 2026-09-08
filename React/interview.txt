@@ -1,0 +1,73 @@
+useEffect(async()=>{
+	const res = await axio.get("")
+	console.log(res.data)
+},[]);
+what is await here?
+
+JS Topics
+Promises
+coding question on promise
+closure
+hoisting
+callback function
+JavaScript is a single threaded or multi-threaded?
+What is ES6? Features of ES6?
+
+
+Virtual Dom
+Diffing Algorithm
+Hooks you used in project
+Controlled and Uncontrolled components
+Difference between state and useRef
+Lastest version of react you used? What are features of latest React
+What is JSX and features of JSX?
+What are the rules for writing React Hooks?
+Different types of React Hooks?
+Reconcilation in React?
+
+Difference between forEach and map.
+Difference between fetch() and axios
+optimization in react
+what is reat.memo
+authorization
+props
+how to send data
+how do you implement component didUpdate in functional components
+lifecycle methods
+Component cycle in react component
+How do you pass data between components
+Redux
+
+
+2 + "1"
+2 - '1'
+{} === {}
+null === null
+
+display:grid;
+grid-template-column: 6,1fr
+
+
+function foo(){
+    a = 2
+  }
+  foo()
+
+  console.log(a); //2
+
+function foo(){
+ var a = 2
+  }
+  foo()
+  console.log(a); // 2
+ 
+console.log("Start"); 
+setTimeout(() => { 
+  console.log("setTimeout");
+ }, 0);
+ 
+Promise.resolve().then(() => { 
+  console.log("Promise"); 
+}); 
+console.log("End");
+

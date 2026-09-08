@@ -1,0 +1,101 @@
+output ??
+1.
+let num = 10;
+let num = 20;
+?
+2.
+const age = 18;
+age = 20;
+?
+3.
+const user = { id: 1, name: 'Ajay' }
+user.name = 'Abhay';
+?
+_________________________________________________________________________________________________________
+create a state and how to show data in table & how can we delete row in React write a program
+[
+  { "name": "Camden Prince",  "phone": "(132) 228-5766",  "email": "purus.ac@outlook.ca",  "status": "active" },
+  { "name": "Serina Olsen", "phone": "1-886-423-2375",  "email": "consectetuer.adipiscing@protonmail.org","status": "inactive" },
+  { "name": "Angela Nicholson", "phone": "(552) 308-1521",  "email": "magna.cras@yahoo.net", "status": "active" }
+]
+____________________________________________________________________________________________________________________
+
+Arrow and normal Function difference
+difference between named export & default export
+Write a program for Charcount
+How we create State?
+what is the concept of keys in react?
+
+what is callback function
+what is clouser
+let var const difference
+hoisting
+
+---------------------------------------------------------------------------------------------------------
+what is CSS preprocessor? understand advantage of SCss or any preprocessor?
+what are the new property of CSS3?
+when we can use flex and Grid?
+Figma related question?
+there are number or events involved in Agile methodology ? How can it Progress?
+Situation wise question : one requirement came into the sprint how you will Manage?
+Hooks in React?
+Pure Component in react?
+How do you mange the Rest API Integration? 
+what is Micro frontend Architecture?
+How you manage the code base in your project?
+So writing the prompt what are the key points or factors we need to consider to get the accurate result?
+Performance Activity Tools?
+The pages are loading bit slow. we need to optimize the performance for that application. so when this is assigned to you , how will you get approach?
+A, AA, AAA accessibility issue?
+ 
+these are the questions i have done one interview on Friday
+---------------------------------------------------------------------------------------------------------
+Let , Var , Const Difference
+output for this---
+let obj = {name: Surabhi}
+const obj = {name: Surabhi}
+  
+let name = "surabhi";
+const name = "surabhi";
+
+immutability in javascript?
+what is micro task & macro Task & example?
+We have 5 API which microtask will be the highest?
+Shallow copy & deep Copy?
+here is a like three APIs, okay? Have you ever worked on API to fetch data or something Okay, so suppose there are three APIs. And if you're fetching all the three APIs together and one of the API fails, then how would you still display partial data?
+difference between map and foreach method?
+object. Freeze() & object. Seal()?
+react reconciliation?
+what is usememo()?
+Custom Hooks?
+How do you use useEffect and cleanup function?
+write a program const str = "HelloWorldHowAreYouDoing";	
+// Output: "Hello World How Are You Doing"
+what is SSR?
+Unit Testing like JEST/ KARMA/ KASMINE
+CI/CD Pipeline
+What is monorepo?
+---------------------------------------------------------------------------------------------------------
+
+React is SPA or its multipage?
+how the data is manged ? how the state management is done in that React Application?
+so suppose like if the application is loading entirely on app, like on an initial load, we're getting the data from backend. And this data should be used across the application. How can we handle this case?
+how can we pass the data to all the components in React application at Once?
+What is redux?
+If We dont Using Redux in app and user wants to send the data from the child to the Parent component . How they pass?
+how can we pass the data parent compoenent to nested component?
+What is Hooks & describe?
+What is the importance of useMemo ?
+what is useCallback?
+Example if there is like in a single page application. So there are multiple components. Like there are huge number of components. But we don't want to load all the components at once based on some user click events or anything, anything after loading events. We want to load a different components which is not loaded before. 
+How can we achieve that Lazyloading()?
+What is Promise?
+Importance of Key Prop in react?
+What is the difference between ID and Key ?
+React Fiber Concept ?
+what is react reaconcilliation?
+How will you fetch data from backend?
+diff b/w unknown & any Keyword?
+diff b/w interface and type?
+
+ 

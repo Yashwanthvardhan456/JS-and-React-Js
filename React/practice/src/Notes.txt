@@ -1,0 +1,30 @@
+import React, { useState } from "react";
+import CardList from "./components/CardList";
+import CardDetails from "./components/CardDetails";
+import cardsData from "./data/cards";
+import "./App.css";
+
+function App() {
+  // State 1 : all cards
+  const [cards] = useState(cardsData);
+
+  // State 2 : selected card
+  const [selectedCardId, setSelectedCardId] = useState(null);
+
+  // callback function
+  const handleSelectCard = (id) => {
+    setSelectedCardId(id);
+  };
+
+  return (
+    <div>
+      <h1>Bank Credit Cards</h1>
+
+      <CardList cards={cards} onSelectCard={handleSelectCard} />
+
+      {selectedCardId && <CardDetails cardId={selectedCardId} />}
+    </div>
+  );
+}
+
+export default App;

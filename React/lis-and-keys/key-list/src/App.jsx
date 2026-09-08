@@ -1,0 +1,62 @@
+import React, { useState } from "react";
+
+const App = () => {
+  // State to store the list of items.
+  // Initially contains two fruits.
+  const [storeArray, setStoreArray] = useState(["Mango", "Apple"]);
+
+  // State to store the current value typed in the input field.
+  const [storeInput, setStoreInput] = useState("");
+
+  // Function to add a new item to the array.
+  const addItem = () => {
+    // Create a new array by copying existing items
+    // and appending the new input value.
+    setStoreArray([...storeArray, storeInput]);
+
+    // Clear the input field after adding the item.
+    setStoreInput("");
+  };
+
+  // Function to delete an item based on its index position.
+  const dltItem = (index) => {
+    // Create a copy of the current array.
+    const updateArray = [...storeArray];
+
+    // Remove 1 element from the specified index.
+    updateArray.splice(index, 1);
+
+    // Update state with the modified array.
+    setStoreArray(updateArray);
+  };
+
+  return (
+    <div>
+      {/* Loop through all items in the array and display them */}
+      {storeArray.map((item, index) => (
+        <div key={index}>
+          <div>
+            {/* Display the item name */}
+            {item}
+
+            {/* Delete button removes the corresponding item */}
+            <button onClick={() => dltItem(index)}>Delete</button>
+          </div>
+        </div>
+      ))}
+
+      {/* Input field for entering a new item */}
+      <input
+        value={storeInput}
+        type="text"
+        placeholder="Enter Item"
+        onChange={(e) => setStoreInput(e.target.value)}
+      />
+
+      {/* Button to add the entered item into the array */}
+      <button onClick={addItem}>Add Item</button>
+    </div>
+  );
+};
+
+export default App;

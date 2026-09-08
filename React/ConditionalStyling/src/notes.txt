@@ -1,0 +1,79 @@
+//Inline Conditional Styling
+import React from "react";
+
+const App = () => {
+  const isOnline = false;
+  return (
+    <div>
+      <h2 style={{ color: isOnline ? "Green" : "Red" }}>
+        {isOnline ? "Online" : "Offline"}
+      </h2>
+    </div>
+  );
+};
+
+export default App;
+
+//Conditional Class Name
+import React from "react";
+import "./Classname.css";
+
+const App = () => {
+  const isActive = false;
+  return (
+    <div>
+      <button className={isActive ? "active" : "inActive"}>
+        {isActive ? "Active" : "In Active"}
+      </button>
+    </div>
+  );
+};
+
+export default App;
+
+.active {
+  background-color: green;
+  color: white;
+}
+.inActive {
+  background-color: red;
+  color: white;
+}
+
+
+//Active and inActive UI Stylingimport React, { useState } from "react";
+import "./Classname.css";
+import "./App.css";
+
+const App = () => {
+  const [storeNav, setStoreNav] = useState("Home");
+  return (
+    <div>
+      <div>
+        <button
+          className={storeNav === "Home" ? "active" : ""}
+          onClick={() => setStoreNav("Home")}
+        >
+          Home
+        </button>
+        <button
+          className={storeNav === "Service" ? "active" : ""}
+          onClick={() => setStoreNav("Service")}
+        >
+          Service
+        </button>
+        <button
+          className={storeNav === "Contact" ? "active" : ""}
+          onClick={() => setStoreNav("Contact")}
+        >
+          Contact
+        </button>
+      </div>
+      <div>{storeNav}</div>
+    </div>
+  );
+};
+
+export default App;
+
+
