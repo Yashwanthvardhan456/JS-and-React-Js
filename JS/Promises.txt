@@ -1,0 +1,57 @@
+// food prepared - food eaten - went to school
+
+
+function foodPrepared(){
+    let isFoodPrepared = true
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        if(isFoodPrepared){
+            resolve("Food prepared")
+        }else{
+            reject("Failed to Prepared Food")
+        }
+            
+        },3000)
+    })
+    
+}
+function foodEaten(){
+    let isfoodEaten = true
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            if(isfoodEaten){
+            resolve("Food Eaten")
+        }else{
+            reject("Failed to Eat Food")
+        }
+           
+        },2000)
+    })
+}
+function goToSchool(){
+    let isGotoSchool = true
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+             if(isGotoSchool){
+            resolve("Go to School")
+        }else{
+            reject("Failed to Go to school")
+        }
+           
+        },1000)
+    })
+}
+foodPrepared().then((value)=>{
+    console.log(value)
+    return foodEaten();
+}).then((value)=>{
+    console.log(value)
+    return goToSchool()
+}).then((value)=>{
+    console.log(value)
+    console.log("All Promises are Finished")
+}).catch((error)=>{
+    console.log(error)
+}).finally(()=>{
+    console.log("All Promises Resolved or Rejected")
+})

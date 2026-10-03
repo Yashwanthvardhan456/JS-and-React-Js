@@ -6,7 +6,7 @@ I am preparing for React JS Developer interviews with 5 years of experience.
  MY INTERVIEW QUESTION
 
 [START QUESTION]
-
+What is event capture
 [END QUESTION]
 
 ==================================================

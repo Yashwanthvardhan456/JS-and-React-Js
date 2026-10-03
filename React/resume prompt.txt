@@ -1,0 +1,69 @@
+Act as a professional resume writer, ATS optimization expert, and recruiter.
+
+Create a modern, ATS-friendly resume tailored to the provided information. Follow these rules:
+
+1. Use a clean, simple format with standard section headings.
+2. Optimize for Applicant Tracking Systems (ATS).
+3. Incorporate relevant industry keywords naturally throughout the resume.
+4. Quantify achievements wherever possible using metrics, percentages, savings, revenue, productivity improvements, or project impact.
+5. Use strong action verbs and professional language.
+6. Keep the resume concise and impactful.
+7. Focus on achievements rather than responsibilities.
+8. Ensure formatting is ATS compatible:
+   - No tables
+   - No text boxes
+   - No graphics or icons
+   - Standard fonts
+   - Simple bullet points
+9. Include the following sections when applicable:
+   - Professional Summary
+   - Core Skills
+   - Technical Skills
+   - Professional Experience
+   - Projects
+   - Education
+   - Certifications
+   - Awards & Achievements
+10. Tailor the resume to the target job description and prioritize matching keywords.
+
+Candidate Information:
+[PASTE YOUR DETAILS HERE]
+
+Target Job Title:
+AEM Author | AEM Web Content Specialist
+
+Target Job Description:
+Key Responsibilities:
+Author and manage website content using Adobe Experience Manager (AEM)
+ 
+✅ Work closely with AEM Leads and SMEs to ensure smooth project delivery
+✅ Create and configure AEM pages, templates, components, and assets
+✅ Map Figma designs and visual mockups into AEM page structures
+✅ Build and manage Editable (Dynamic) Templates
+✅ Configure page properties, tags, metadata, SEO tags, and Google Tag Manager
+✅ Work with Content Fragments and Experience Fragments 
+✅ Ensure responsive web page creation using HTML, CSS/SASS, and JavaScript
+✅ Support multi-site and multi-language implementations
+✅ Troubleshoot and resolve content authoring and configuration issues
+✅ Collaborate in Agile environments using JIRA or ServiceNow
+ 
+Required Skills
+ 
+🔹 Adobe Experience Manager (AEM)
+🔹 AEM Sites
+🔹 AEM DAM (Digital Asset Management)
+🔹 Templates & Components Configuration
+🔹 Editable Templates
+🔹 Content Fragments & Experience Fragments
+🔹 Touch UI & Classic UI
+🔹 HTML, CSS/SASS, JavaScript
+🔹 SEO & Google Tag Manager (GTM)
+🔹 Multi-site & Multi-language Implementations
+🔹 JIRA / ServiceNow
+
+Output Requirements:
+- Create a complete ATS-friendly resume.
+- Include an ATS Match Score (estimated).
+- List the keywords included from the job description.
+- Suggest additional keywords that can improve ATS ranking.
+- Provide a plain-text version that can be directly copied into Word.
